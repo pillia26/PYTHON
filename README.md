@@ -2,7 +2,6 @@ PRACCTICAL: 1
 Aim: A) Write a Python program using various datatypes and check their types. 
 
 Code:
-# Different data types
 
 name = "SAISH"
 age = 18
@@ -10,8 +9,6 @@ height = 5.4
 is_student = True
 marks = [80, 85, 90]
 subject = ("Python", "DS")
-
-# Display values and their data types
 
 print("Name:", name, "Type:", type(name))
 print("Age:", age, "Type:", type(age))
@@ -326,3 +323,24 @@ for card in deck:
     print(card)
 
 
+Aim: C) Python Program to Import Built-in and User-defined Modules.
+
+CODE:
+
+import math
+import types
+
+mymodule = types.ModuleType("mymodule")
+
+def greet(name):
+    return "Hello, " + name
+
+mymodule.greet = greet
+
+print("Square root of 30:", math.sqrt(25))
+
+print(mymodule.greet("Saish"))
+
+
+
+END OF 1 st SEM PRACTICALS...
